@@ -1,21 +1,17 @@
-import React, { useState } from "react";
-import "./item.css";
+import React from "react";
 
-function Item() {
-  const [dataArr, setDataArr] = useState([
-    { nom: "Minoushe" },
-    { nom: "Freddy" },
-    { nom: "Nahomy" },
-  ]);
-
-  // console.log(dataArr);
-
+function Item(props) {
   return (
-    <div className="App">
-      {dataArr.map((data, index) => {
-        return <ul key={index}>Nom: {data.nom}</ul>;
-      })}
-    </div>
+    <li className="border d-flex justify-content-between align-items-center p-2 m-2">
+      <div className="p-3">{props.txt}</div>
+      <button
+        className="btn btn-danger p-2 h-50"
+        onClick={() => props.delFunc(props.id)}
+      >
+        Supprimer
+      </button>
+    </li>
   );
 }
+
 export default Item;
