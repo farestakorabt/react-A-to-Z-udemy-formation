@@ -1,6 +1,9 @@
-body {
-  font-family: "Trebuchet MS", sans-serif;
-  margin: 5vw;
-  text-align: center;
-  background-color: rgb(206, 235, 235);
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

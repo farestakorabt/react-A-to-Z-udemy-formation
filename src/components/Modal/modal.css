@@ -1,0 +1,36 @@
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+  border: none;
+  border-radius: .8vw .8vw;
+  box-shadow:  0 0 0 .5vw rgb(164, 164, 167);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(233, 227, 227, 0.6);
+}
+
+.modal {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 14px;
+  border-radius: 3px;
+  
+  max-width: 600px;
+  max-height: 300%;
+}
+
+.modal-content p {
+  line-height: 1.4;
+}
+
