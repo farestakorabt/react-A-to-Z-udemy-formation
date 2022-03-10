@@ -3,7 +3,6 @@
   height: auto;
   border: 1px solid rgb(0, 0, 0, 0.2);
   margin: 100px auto 0;
-  /* padding: 2vw; */
 }
 
 .accordeon-visible {
@@ -14,7 +13,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 2vw;
-  border-radius: 0.8vw;
 }
 
 .accordeon-visible img {

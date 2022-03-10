@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
-import Pexels from "../assets/pexels.mp4"
+import Pexels from "../../assets/pexels.mp4";
 
 export const RefVideo = () => {
   const [toggle, setToggle] = useState(true);
@@ -34,19 +34,15 @@ export const RefVideo = () => {
 
   return (
     <div className="App">
-      <video ref={addToRef} width={400} height={400} autoPlay controls muted>
-        <source src={Pexels} />
-      </video>
-
-      <video ref={addToRef} width={400} height={400} autoPlay controls muted>
-        <source src={Pexels} />
-      </video>
-
-      <video ref={addToRef} width={400} height={400} autoPlay controls muted>
-        <source src={Pexels} />
-      </video>
-
       <button onClick={toggleFunc}>Toggle</button>
+
+      <video ref={addToRef} width={400} height={400} autoPlay controls muted>
+        <source src={Pexels} />
+      </video>
+
+      <video ref={addToRef} width={400} height={400} autoPlay controls muted>
+        <source src={Pexels} />
+      </video>
     </div>
   );
 };

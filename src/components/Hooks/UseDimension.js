@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useDimension() {
+function UseDimension() {
   const [dimension, setDimention] = useState();
 
   useEffect(() => {
@@ -19,4 +19,4 @@ function useDimension() {
   return dimension;
 }
 
-export default useDimension;
+export default UseDimension;

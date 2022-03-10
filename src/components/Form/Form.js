@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Item from "./Item";
+import Item from "../Item/Item";
 import { v4 as uuidv4 } from "uuid";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Form() {
   const [dataArr, setDataArr] = useState([

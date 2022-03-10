@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./timer.css";
 
 function Timer() {
   const [timer, setTimer] = useState(1);
@@ -15,7 +16,7 @@ function Timer() {
 
   return (
     <>
-      <p>{timer}</p>
+      <h1>{timer}</h1>
     </>
   );
 }
