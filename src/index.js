@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import CountReducer from "./components/Reducer/CountReducer";
+
+const Store = createStore(CountReducer);
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Provider store={Store}>
     <App />
-  </BrowserRouter>,
+  </Provider>,
   document.getElementById("root")
 );
