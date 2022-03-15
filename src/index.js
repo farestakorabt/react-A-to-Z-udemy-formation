@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { createStore } from "redux";
 import { Provider } from "react-redux";
-import CountReducer from "./components/Reducer/CountReducer";
+import store from "./redux/store";
 
-const Store = createStore(CountReducer);
 
 ReactDOM.render(
-  <Provider store={Store}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById("root")
