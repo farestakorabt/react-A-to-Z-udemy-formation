@@ -1,16 +1,17 @@
 import React from "react";
-import Counter from "./components/Counter/Counter";
 import "./index.css";
-
-
+import Navbar from "./components/blog-react/Components/Navbar/Navbar";
+import Home from "./components/blog-react/Containers/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Navbar />
+      <Home/>
     </div>
   );
 }
+
 
 export default App;
 
@@ -27,6 +28,10 @@ export default App;
 
 
 
+
+
+// import Counter from "./components/Counter/Counter";
+/* <Counter /> */
 
 // import { Routes, Route } from "react-router-dom";
 // import Home from "./components/Pages/Home";

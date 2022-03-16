@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
 
-function Navbar() {
+export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [largeur, setLargeur] = useState(window.innerWidth);
 
@@ -26,7 +26,7 @@ function Navbar() {
       {(toggleMenu || largeur > 500) && (
         <ul className="list">
           <li className="items">Accueil</li>
-          <li className="items">Service</li>
+          <li className="items">Ecrire</li>
           <li className="items">Contact</li>
         </ul>
       )}
@@ -37,4 +37,3 @@ function Navbar() {
   );
 }
 
-export default Navbar;

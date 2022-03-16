@@ -15,8 +15,9 @@ nav {
 }
 
 .items {
-  margin-right: 3vw;
+  margin-right: 3.5vw;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -30,10 +31,13 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+
   .list {
     flex-direction: column;
-    height: 200px;
+    height: auto;
     background: linear-gradient(rgb(194, 193, 193), rgba(2, 241, 222, 0.5));
+    /* position: absolute; */
+    /* z-index: 1; */
   }
 
   .items:nth-child(1) {
@@ -43,7 +47,7 @@ nav {
 
   .items {
     height: 50px;
-    width: 80%;
+    width: 90%;
     border-bottom: 1px solid #fff;
     line-height: 50px;
     text-align: center;
